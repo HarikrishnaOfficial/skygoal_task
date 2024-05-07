@@ -1,0 +1,91 @@
+{
+	"info": {
+		"_postman_id": "50006a90-875f-40ac-8cb9-0f64e244d2b5",
+		"name": "skygoal",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "33817519"
+	},
+	"item": [
+		{
+			"name": "register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\":\"Hari\",\r\n    \"password\":\"12345678@\",\r\n    \"email\":\"harikrishna@gmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"harikrishna@gmail.com\",\r\n    \"password\":\"12345678@\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get all users",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Barer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NjM5Y2U0NjZjYjI1NTQ0OTkyZjQ2OGMiLCJpYXQiOjE3MTUwNjUwMzYsImV4cCI6MTcxNTA2ODYzNn0.x1GvxesVRlMknp2PCLVvykLhccvZ3HRkVyR_jIcpEjA",
+						"uuid": "864e43af-05ac-4be1-9738-385cb3ffeb98"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8000/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
